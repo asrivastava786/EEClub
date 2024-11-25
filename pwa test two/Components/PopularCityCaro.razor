@@ -1,0 +1,50 @@
+﻿@* PopularCities.razor *@
+@* <style>
+
+</style> *@
+
+<div class="container my-5 container-box text-center">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Popular Cities for Investments</h2>
+        <a href="/cities" class="btn btn-custom">See All 126 Cities</a>
+    </div>
+    <div class="row">
+        @foreach (var city in Cities)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card city-card position-relative">
+                    <img src="@city.ImageUrl" class="card-img-top" alt="@city.Name" />
+                    <div class="card-img-overlay city-overlay d-flex flex-column justify-content-end">
+                        <div class="mb-1">
+                            <span class="country-flag">@city.Flag</span><strong>@city.Name</strong>
+                        </div>
+                        <small>@city.ProjectCount projects<br />From @city.Price</small>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <button class="btn btn-light rounded-circle me-2">&lt;</button>
+        <button class="btn btn-light rounded-circle">&gt;</button>
+    </div>
+</div>
+
+@code {
+    public class City
+    {
+        public string Name { get; set; }
+        public string ImageUrl { get; set; }
+        public string Flag { get; set; }
+        public int ProjectCount { get; set; }
+        public string Price { get; set; }
+    }
+
+    private List<City> Cities = new List<City>
+    {
+        new City { Name = "Bali", ImageUrl = "images/Montenegro.png", Flag = "🇮🇩", ProjectCount = 100, Price = "106 700 AED" },
+        new City { Name = "Ras Al-Khaimah", ImageUrl = "images/Montenegro.png", Flag = "🇦🇪", ProjectCount = 50, Price = "256 926 AED" },
+        new City { Name = "Sharjah", ImageUrl = "images/Montenegro.png", Flag = "🇦🇪", ProjectCount = 40, Price = "119 537 AED" },
+        // Add more cities as needed
+    };
+}

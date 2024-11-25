@@ -1,0 +1,80 @@
+﻿
+<style>
+/* Frosted glass effect */
+.frosted-glass {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect for the frosted look */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 15px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px; /* Add spacing inside the frosted container */
+}
+
+/* Logo styling */
+.logo-img {
+    max-height: 80px; /* Consistent logo size */
+    max-width: 150px; /* Prevent logos from being too wide */
+    object-fit: contain; /* Maintain logo aspect ratio */
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo-img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Title styling */
+h2 {
+    font-weight: bold;
+    color: #333; /* Dark text color for contrast */
+    margin-bottom: 20px;
+}
+</style>
+
+<section id="as-seen-on" class="py-5">
+    <div class="container text-center">
+        <!-- Section Title -->
+        <h2 class="mb-4 text-dark">As Seen On</h2>
+
+        <!-- Logo Carousel -->
+        <div id="logoCarousel" class="carousel slide frosted-glass" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="https://res.cloudinary.com/luxuryp/images/w_320,c_limit,q_auto/wq53zstqzzapnfhw7d2w/patch-logo" alt="Logo 1" class="mx-3 logo-img">
+                        <img src="https://via.placeholder.com/150x80?text=Logo+2" alt="Logo 2" class="mx-3 logo-img">
+                        <img src="https://res.cloudinary.com/luxuryp/images/w_320,c_limit,q_auto/wq53zstqzzapnfhw7d2w/patch-logo" alt="Logo 3" class="mx-3 logo-img">
+
+                        <img src="https://res.cloudinary.com/luxuryp/images/q_auto/rl0pyf8kp5w7cgdacrg1/seattle-logo" alt="Logo 4" class="mx-3 logo-img">
+                        <img src="https://via.placeholder.com/150x80?text=Logo+5" alt="Logo 5" class="mx-3 logo-img">
+                        <img src="https://res.cloudinary.com/luxuryp/images/q_auto/rl0pyf8kp5w7cgdacrg1/seattle-logo" alt="Logo 6" class="mx-3 logo-img">
+
+                       
+
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="https://res.cloudinary.com/luxuryp/images/q_auto/rl0pyf8kp5w7cgdacrg1/seattle-logo" alt="Logo 4" class="mx-3 logo-img">
+                        <img src="https://via.placeholder.com/150x80?text=Logo+5" alt="Logo 6" class="mx-3 logo-img">
+                        <img src="https://res.cloudinary.com/luxuryp/images/q_auto/rl0pyf8kp5w7cgdacrg1/seattle-logo" alt="Logo 6" class="mx-3 logo-img">
+
+                         <img src="https://res.cloudinary.com/luxuryp/images/q_auto/rl0pyf8kp5w7cgdacrg1/seattle-logo" alt="Logo 4" class="mx-3 logo-img">
+                        <img src="https://via.placeholder.com/150x80?text=Logo+5" alt="Logo 8" class="mx-3 logo-img">
+                        <img src="https://res.cloudinary.com/luxuryp/images/q_auto/rl0pyf8kp5w7cgdacrg1/seattle-logo" alt="Logo 6" class="mx-3 logo-img">
+                       
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="https://res.cloudinary.com/luxuryp/images/q_auto/phqvoaiui891xn45acxo/mi-reporter" alt="Logo 7" class="mx-3 logo-img">
+                        <img src="https://via.placeholder.com/150x80?text=Logo+8" alt="Logo 10" class="mx-3 logo-img">
+                        <img src="https://res.cloudinary.com/luxuryp/images/q_auto/phqvoaiui891xn45acxo/mi-reporter" alt="Logo 9" class="mx-3 logo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

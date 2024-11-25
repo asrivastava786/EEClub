@@ -1,0 +1,51 @@
+﻿@* Header.razor *@
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-header">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">
+            <img src="/imageEEC.png" alt="Logo" class="header-logo">
+        </a>
+
+        <!-- Hamburger menu for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/properties/sale">Our Properties</NavLink>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/kellyweisfield.seattle/" target="_blank">Social</a>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/contact">Contact</NavLink>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tel:(206) 355-3863" aria-label="call (206) 355-3863">206.355.3863</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+    /* Transparent Header Styles */
+    .transparent-header {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        color: #ffffff;
+    }
+
+    .header-logo {
+        height: 100px;
+        position:center;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        color: #ffffff !important;
+    }
+</style>

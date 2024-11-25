@@ -1,0 +1,2 @@
+D:\repos\EURO Estate Club\pwa test two\wwwroot\appsettings.Development.json
+D:\repos\EURO Estate Club\pwa test two\wwwroot\appsettings.json

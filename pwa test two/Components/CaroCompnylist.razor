@@ -1,0 +1,161 @@
+﻿<style>
+    /* General Styling */
+    #featured-property {
+        background: linear-gradient(145deg, #222, #000), url('https://www.transparenttextures.com/patterns/black-linen.png') no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+    .property-image img {
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .property-image img:hover {
+            transform: scale(1.05);
+        }
+
+    .property-details {
+        background: rgba(30, 30, 30, 0.8);
+        backdrop-filter: blur(12px);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .property-details:hover {
+            transform: translateY(-10px);
+        }
+
+    .property-price {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #ff9f00; /* Refined gold accent for iOS-inspired design */
+    }
+
+    .pre-title {
+        font-size: 0.9rem;
+        color: #ccc;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    .property-details h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+        margin: 1.5rem 0;
+        font-size: 1rem;
+        color: #ddd;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Buttons */
+    .btn-container .btn {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-transform: uppercase;
+        font-weight: 500;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-primary {
+        background-color: #007aff; /* iOS blue */
+        color: white;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #005bb5;
+        }
+
+    .btn-outline-light {
+        border: 2px solid white;
+        color: white;
+        background: none;
+    }
+
+        .btn-outline-light:hover {
+            background: white;
+            color: #000;
+        }
+
+    .img-fluid.w-100 {
+        width: 100%; /* Keep the full width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 16px; /* Rounded corners for an iOS feel */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        background-color: #f8f8f8; /* Light neutral background, iOS-like */
+        padding: 10px; /* Optional padding for an inset effect */
+        object-fit: cover; /* Ensure images fit nicely */
+    }
+
+    /* Responsive Enhancements */
+/*     media (max-width: 768px) {
+        .property-details
+
+    {
+        text-align: center;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+        .btn:last-child {
+            margin-bottom: 0;
+        }
+
+    } */
+</style>
+
+<section id="featured-property" class="py-5">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Left Side: Image -->
+            <div class="col-md-6 p-0">
+                <div class="property-image">
+                    <img src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/hlloohje4wrxczvy9znv/print_03"
+                         class="img-fluid w-100" alt="1246 N 42nd Place, Renton 98056">
+                </div>
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="property-details p-4">
+                    <p class="pre-title">Featured Listing</p>
+                    <h2>1246 N 42nd Place, Renton 98056</h2>
+                    <p class="property-price">$1,680,000</p>
+                    <ul>
+                        <li>3 Beds</li>
+                        <li>3 Baths</li>
+                        <li>2,870 Sq.Ft.</li>
+                    </ul>
+                    <div class="btn-container d-flex">
+                        <a href="/properties/lakeside-nw-contemporary-living" class="btn btn-primary me-3">View Listing</a>
+                        <a href="/properties/sale" class="btn btn-outline-light">View All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
